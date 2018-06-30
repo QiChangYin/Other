@@ -2012,14 +2012,489 @@ django.template.exceptions.TemplateSyntaxError: Unused '3' at end of if expressi
 2018-06-01 13:33:34,888 [HttpRunnerManager:40] [views:login] [INFO]- yinquanwang 登录成功
 2018-06-01 13:34:09,536 [HttpRunnerManager:152] [operation:add_case_data] [INFO]- test_login_2用例更新成功: {'test': {'extract': [{'code': 'content.code'}, {'status': 'content.status'}], 'variables': [{'username': '${get_value(lcc)}'}, {'password': '${get_value(lcc)}'}], 'name': 'test_login_2', 'validate': [{'comparator': 'equals', 'expected': 'success', 'check': '$code'}, {'comparator': 'equals', 'expected': True, 'check': '$status'}], 'request': {'method': 'POST', 'data': {'password': '$password', 'username': '$username'}, 'url': 'http://127.0.0.1:8000/api/test_login_valid/'}}}
 2018-06-01 14:05:30,016 [HttpRunnerManager:40] [views:login] [INFO]- yinquanwang 登录成功
-2018-06-20 21:38:40,860 [HttpRunnerManager:44] [views:login] [INFO]- yinqichang 登录成功
-2018-06-20 22:00:28,499 [HttpRunnerManager:188] [operation:add_config_data] [INFO]- 阿萨德配置添加成功: {'config': {'request': {}, 'name': '阿萨德'}}
-2018-06-20 22:11:46,850 [HttpRunnerManager:150] [operation:add_case_data] [INFO]- 大用例添加成功: {'test': {'request': {'url': '/api/test', 'method': 'POST', 'data': {'username': '$username', 'password': '$password'}}, 'name': '大'}}
-2018-06-20 22:14:14,051 [HttpRunnerManager:105] [operation:add_module_data] [INFO]- 模块添加成功：{'module_name': 'sda ', 'test_user': 'dsasa', 'simple_desc': 'dssda', 'other_desc': 'sdadas', 'belong_project': <ProjectInfo: ProjectInfo object (1)>}
-2018-06-20 22:15:37,534 [HttpRunnerManager:57] [operation:add_project_data] [INFO]- 项目添加成功：{'project_name': '畅行天下', 'responsible_name': '尹其畅', 'test_user': '尹其畅', 'dev_user': '尹其畅', 'publish_app': '尹其畅', 'simple_desc': '尹其畅', 'other_desc': '尹其畅'}
-2018-06-20 22:15:57,970 [HttpRunnerManager:105] [operation:add_module_data] [INFO]- 模块添加成功：{'module_name': '避孕套', 'test_user': '尹其畅', 'simple_desc': '尹其畅', 'other_desc': '尹其畅', 'belong_project': <ProjectInfo: ProjectInfo object (6)>}
-2018-06-20 22:20:15,309 [HttpRunnerManager:150] [operation:add_case_data] [INFO]- 阿萨德用例添加成功: {'test': {'request': {'url': '/api/test', 'method': 'POST', 'data': {'username': '$username', 'password': '$password'}}, 'name': '阿萨德'}}
-2018-06-20 23:13:32,715 [HttpRunnerManager:57] [operation:add_project_data] [INFO]- 项目添加成功：{'project_name': 'HttpRunnerManager', 'responsible_name': 'yinqichang', 'test_user': 'yinqichang', 'dev_user': 'yinqichang', 'publish_app': 'HttpRunnerManager', 'simple_desc': 'HttpRunnerManager', 'other_desc': 'HttpRunnerManager'}
-2018-06-20 23:14:40,680 [HttpRunnerManager:105] [operation:add_module_data] [INFO]- 模块添加成功：{'module_name': 'module test 01', 'test_user': 'yinqichang', 'simple_desc': 'HttpRunnerManager', 'other_desc': 'HttpRunnerManager', 'belong_project': <ProjectInfo: ProjectInfo object (7)>}
-2018-06-20 23:25:52,136 [HttpRunnerManager:150] [operation:add_case_data] [INFO]- test case demo 01用例添加成功: {'test': {'request': {'url': '/api/test', 'method': 'POST', 'data': {'username': '$username', 'password': '$password'}}, 'name': 'test case demo 01', 'validate': [{'comparator': 'equals', 'check': '$code', 'expected': 'ok'}, {'comparator': 'equals', 'check': '$success', 'expected': 'ok'}], 'extract': [{'code': 'content.code'}, {'success': 'content.code.0.success'}], 'variables': [{'username': 'yinqichang'}, {'password': '${get_value(yinqichang)}'}], 'parameters': [{'single': ['1', '2']}, {'username-password': [['1', '2'], ['1', '2']]}], 'setup_hooks': ['${sleep_N_seconds(2)}'], 'teardown_hooks': ['${sleep_N_seconds(2)}']}}
-2018-06-20 23:27:36,625 [HttpRunnerManager:159] [operation:add_case_data] [INFO]- nidaye用例更新成功: {'test': {'request': {'url': '/api/test', 'method': 'POST', 'data': {'username': '$username', 'password': '$password'}}, 'name': 'nidaye', 'validate': [{'comparator': 'equals', 'check': '$code', 'expected': 'ok'}, {'comparator': 'equals', 'check': '$success', 'expected': 'ok'}], 'extract': [{'code': 'content.code'}, {'success': 'content.code.0.success'}], 'variables': [{'username': 'yinqichang'}, {'password': '${get_value(yinqichang)}'}], 'parameters': [{'single': ['1', '2']}, {'username-password': [['1', '2'], ['1', '2']]}]}}
+2018-06-24 22:45:44,518 [django.request:93] [base:get_response] [WARNING]- Not Found: /static/assets/css/common.css
+2018-06-24 22:45:44,521 [django.request:93] [base:get_response] [WARNING]- Not Found: /static/assets/css/admin.css
+2018-06-24 22:45:44,526 [django.request:93] [base:get_response] [WARNING]- Not Found: /static/assets/js/commons.js
+2018-06-24 22:45:44,529 [django.request:93] [base:get_response] [WARNING]- Not Found: /static/assets/js/app.js
+2018-06-24 22:45:44,628 [django.request:93] [base:get_response] [WARNING]- Not Found: /static/assets/css/admin.css
+2018-06-24 22:45:44,630 [django.request:93] [base:get_response] [WARNING]- Not Found: /static/assets/css/common.css
+2018-06-24 22:45:44,797 [django.request:93] [base:get_response] [WARNING]- Not Found: /static/assets/js/app.js
+2018-06-24 22:45:44,811 [django.request:93] [base:get_response] [WARNING]- Not Found: /static/assets/js/commons.js
+2018-06-24 22:45:54,097 [django.request:93] [base:get_response] [WARNING]- Not Found: /static/assets/css/css-index.css
+2018-06-24 22:45:54,099 [django.request:93] [base:get_response] [WARNING]- Not Found: /static/assets/img/logo.png
+2018-06-24 22:45:54,100 [django.request:93] [base:get_response] [WARNING]- Not Found: /static/assets/js/custom.js
+2018-06-24 22:45:54,101 [django.request:93] [base:get_response] [WARNING]- Not Found: /static/assets/js/jquery.sticky.js
+2018-06-24 22:45:54,103 [django.request:93] [base:get_response] [WARNING]- Not Found: /static/assets/js/wow.min.js
+2018-06-24 22:45:54,106 [django.request:93] [base:get_response] [WARNING]- Not Found: /static/assets/js/owl.carousel.min.js
+2018-06-24 22:45:54,995 [django.request:93] [base:get_response] [WARNING]- Not Found: /static/assets/img/loading.GIF
+2018-06-24 22:45:55,001 [django.request:93] [base:get_response] [WARNING]- Not Found: /static/assets/img/bg.jpg
+2018-06-24 22:45:55,100 [django.request:93] [base:get_response] [WARNING]- Not Found: /static/assets/js/custom.js
+2018-06-24 22:45:55,119 [django.request:93] [base:get_response] [WARNING]- Not Found: /static/assets/js/jquery.sticky.js
+2018-06-24 22:45:55,124 [django.request:93] [base:get_response] [WARNING]- Not Found: /static/assets/js/wow.min.js
+2018-06-24 22:45:55,130 [django.request:93] [base:get_response] [WARNING]- Not Found: /static/assets/js/owl.carousel.min.js
+2018-06-24 22:48:08,236 [django.request:93] [base:get_response] [WARNING]- Not Found: /static/assets/js/owl.carousel.min.js
+2018-06-24 22:48:08,239 [django.request:93] [base:get_response] [WARNING]- Not Found: /static/assets/js/wow.min.js
+2018-06-24 22:48:08,241 [django.request:93] [base:get_response] [WARNING]- Not Found: /static/assets/js/jquery.sticky.js
+2018-06-24 22:48:08,243 [django.request:93] [base:get_response] [WARNING]- Not Found: /static/assets/css/css-index.css
+2018-06-24 22:48:08,244 [django.request:93] [base:get_response] [WARNING]- Not Found: /static/assets/img/logo.png
+2018-06-24 22:48:08,248 [django.request:93] [base:get_response] [WARNING]- Not Found: /static/assets/js/custom.js
+2018-06-24 22:48:08,727 [django.request:93] [base:get_response] [WARNING]- Not Found: /static/assets/img/loading.GIF
+2018-06-24 22:48:08,730 [django.request:93] [base:get_response] [WARNING]- Not Found: /static/assets/img/bg.jpg
+2018-06-24 22:48:08,814 [django.request:93] [base:get_response] [WARNING]- Not Found: /static/assets/js/custom.js
+2018-06-24 22:48:08,832 [django.request:93] [base:get_response] [WARNING]- Not Found: /static/assets/js/jquery.sticky.js
+2018-06-24 22:48:08,840 [django.request:93] [base:get_response] [WARNING]- Not Found: /static/assets/js/wow.min.js
+2018-06-24 22:48:08,846 [django.request:93] [base:get_response] [WARNING]- Not Found: /static/assets/js/owl.carousel.min.js
+2018-06-24 22:48:08,911 [django.request:93] [base:get_response] [WARNING]- Not Found: /static/assets/img/favicon.ico
+2018-06-24 22:48:12,701 [django.request:93] [base:get_response] [WARNING]- Not Found: /static/assets/css/css-index.css
+2018-06-24 22:48:18,784 [django.request:93] [base:get_response] [WARNING]- Not Found: /static/assets/img/logo.png
+2018-06-24 22:48:18,784 [django.request:93] [base:get_response] [WARNING]- Not Found: /static/assets/css/css-index.css
+2018-06-24 22:48:18,795 [django.request:93] [base:get_response] [WARNING]- Not Found: /static/assets/js/custom.js
+2018-06-24 22:48:18,799 [django.request:93] [base:get_response] [WARNING]- Not Found: /static/assets/js/wow.min.js
+2018-06-24 22:48:18,804 [django.request:93] [base:get_response] [WARNING]- Not Found: /static/assets/js/jquery.sticky.js
+2018-06-24 22:48:18,807 [django.request:93] [base:get_response] [WARNING]- Not Found: /static/assets/js/owl.carousel.min.js
+2018-06-24 22:48:18,849 [django.request:93] [base:get_response] [WARNING]- Not Found: /static/assets/img/loading.GIF
+2018-06-24 22:48:18,855 [django.request:93] [base:get_response] [WARNING]- Not Found: /static/assets/img/bg.jpg
+2018-06-24 22:48:18,877 [django.request:93] [base:get_response] [WARNING]- Not Found: /static/assets/js/wow.min.js
+2018-06-24 22:48:18,886 [django.request:93] [base:get_response] [WARNING]- Not Found: /static/assets/js/owl.carousel.min.js
+2018-06-24 22:49:24,712 [django.request:93] [base:get_response] [WARNING]- Not Found: /static/assets/js/custom.js
+2018-06-24 22:49:24,713 [django.request:93] [base:get_response] [WARNING]- Not Found: /static/assets/js/wow.min.js
+2018-06-24 22:49:24,714 [django.request:93] [base:get_response] [WARNING]- Not Found: /static/assets/js/owl.carousel.min.js
+2018-06-24 22:49:24,714 [django.request:93] [base:get_response] [WARNING]- Not Found: /static/assets/img/logo.png
+2018-06-24 22:49:24,715 [django.request:93] [base:get_response] [WARNING]- Not Found: /static/assets/css/css-index.css
+2018-06-24 22:49:24,717 [django.request:93] [base:get_response] [WARNING]- Not Found: /static/assets/js/jquery.sticky.js
+2018-06-24 22:49:25,671 [django.request:93] [base:get_response] [WARNING]- Not Found: /static/assets/img/loading.GIF
+2018-06-24 22:49:25,673 [django.request:93] [base:get_response] [WARNING]- Not Found: /static/assets/img/bg.jpg
+2018-06-24 22:49:25,811 [django.request:93] [base:get_response] [WARNING]- Not Found: /static/assets/js/custom.js
+2018-06-24 22:49:25,851 [django.request:93] [base:get_response] [WARNING]- Not Found: /static/assets/js/jquery.sticky.js
+2018-06-24 22:49:25,863 [django.request:93] [base:get_response] [WARNING]- Not Found: /static/assets/js/wow.min.js
+2018-06-24 22:49:25,916 [django.request:93] [base:get_response] [WARNING]- Not Found: /static/assets/js/owl.carousel.min.js
+2018-06-24 22:49:27,420 [HttpRunnerManager:45] [views:login] [INFO]- yinqichang 登录成功
+2018-06-24 22:49:27,582 [django.request:93] [base:get_response] [WARNING]- Not Found: /static/assets/css/admin.css
+2018-06-24 22:49:27,584 [django.request:93] [base:get_response] [WARNING]- Not Found: /static/assets/css/common.css
+2018-06-24 22:49:27,587 [django.request:93] [base:get_response] [WARNING]- Not Found: /static/assets/js/app.js
+2018-06-24 22:49:27,590 [django.request:93] [base:get_response] [WARNING]- Not Found: /static/assets/js/commons.js
+2018-06-24 22:49:27,690 [django.request:93] [base:get_response] [WARNING]- Not Found: /static/assets/css/admin.css
+2018-06-24 22:49:27,694 [django.request:93] [base:get_response] [WARNING]- Not Found: /static/assets/css/common.css
+2018-06-24 22:49:28,145 [django.request:93] [base:get_response] [WARNING]- Not Found: /static/assets/js/app.js
+2018-06-24 22:49:28,199 [django.request:93] [base:get_response] [WARNING]- Not Found: /static/assets/js/commons.js
+2018-06-24 22:49:31,059 [django.request:93] [base:get_response] [WARNING]- Not Found: /static/assets/css/admin.css
+2018-06-24 22:49:31,061 [django.request:93] [base:get_response] [WARNING]- Not Found: /static/assets/js/commons.js
+2018-06-24 22:49:31,063 [django.request:93] [base:get_response] [WARNING]- Not Found: /static/assets/js/app.js
+2018-06-24 22:49:31,066 [django.request:93] [base:get_response] [WARNING]- Not Found: /static/assets/css/common.css
+2018-06-24 22:49:31,124 [django.request:93] [base:get_response] [WARNING]- Not Found: /static/assets/css/admin.css
+2018-06-24 22:49:31,451 [django.request:93] [base:get_response] [WARNING]- Not Found: /static/assets/js/app.js
+2018-06-24 22:49:31,478 [django.request:93] [base:get_response] [WARNING]- Not Found: /static/assets/js/commons.js
+2018-06-24 22:51:43,066 [django.request:93] [base:get_response] [WARNING]- Not Found: /static/assets/css/css-index.css
+2018-06-24 22:51:43,190 [django.request:93] [base:get_response] [WARNING]- Not Found: /static/assets/js/custom.js
+2018-06-24 22:51:43,193 [django.request:93] [base:get_response] [WARNING]- Not Found: /static/assets/img/logo.png
+2018-06-24 22:51:43,196 [django.request:93] [base:get_response] [WARNING]- Not Found: /static/assets/js/jquery.sticky.js
+2018-06-24 22:51:43,199 [django.request:93] [base:get_response] [WARNING]- Not Found: /static/assets/js/wow.min.js
+2018-06-24 22:51:43,201 [django.request:93] [base:get_response] [WARNING]- Not Found: /static/assets/js/owl.carousel.min.js
+2018-06-24 22:51:43,218 [django.request:93] [base:get_response] [WARNING]- Not Found: /static/assets/img/loading.GIF
+2018-06-24 22:51:43,225 [django.request:93] [base:get_response] [WARNING]- Not Found: /static/assets/img/bg.jpg
+2018-06-24 22:51:43,350 [django.request:93] [base:get_response] [WARNING]- Not Found: /static/assets/js/custom.js
+2018-06-24 22:51:43,357 [django.request:93] [base:get_response] [WARNING]- Not Found: /static/assets/js/jquery.sticky.js
+2018-06-24 22:51:43,365 [django.request:93] [base:get_response] [WARNING]- Not Found: /static/assets/js/wow.min.js
+2018-06-24 22:51:43,376 [django.request:93] [base:get_response] [WARNING]- Not Found: /static/assets/js/owl.carousel.min.js
+2018-06-24 22:52:33,466 [django.request:93] [base:get_response] [WARNING]- Not Found: /static/assets/css/css-index.css
+2018-06-24 22:52:33,487 [django.request:93] [base:get_response] [WARNING]- Not Found: /static/assets/js/custom.js
+2018-06-24 22:52:33,490 [django.request:93] [base:get_response] [WARNING]- Not Found: /static/assets/js/jquery.sticky.js
+2018-06-24 22:52:33,496 [django.request:93] [base:get_response] [WARNING]- Not Found: /static/assets/img/logo.png
+2018-06-24 22:52:33,499 [django.request:93] [base:get_response] [WARNING]- Not Found: /static/assets/js/wow.min.js
+2018-06-24 22:52:33,501 [django.request:93] [base:get_response] [WARNING]- Not Found: /static/assets/img/loading.GIF
+2018-06-24 22:52:33,501 [django.request:93] [base:get_response] [WARNING]- Not Found: /static/assets/js/owl.carousel.min.js
+2018-06-24 22:52:33,516 [django.request:93] [base:get_response] [WARNING]- Not Found: /static/assets/img/bg.jpg
+2018-06-24 22:52:33,625 [django.request:93] [base:get_response] [WARNING]- Not Found: /static/assets/js/custom.js
+2018-06-24 22:52:33,661 [django.request:93] [base:get_response] [WARNING]- Not Found: /static/assets/js/jquery.sticky.js
+2018-06-24 22:52:33,677 [django.request:93] [base:get_response] [WARNING]- Not Found: /static/assets/js/wow.min.js
+2018-06-24 22:52:33,726 [django.request:93] [base:get_response] [WARNING]- Not Found: /static/assets/js/owl.carousel.min.js
+2018-06-24 22:53:35,274 [HttpRunnerManager:45] [views:login] [INFO]- yinqichang 登录成功
+2018-06-24 22:59:37,841 [HttpRunnerManager:160] [operation:add_case_data] [INFO]- wwqweq用例更新成功: {'test': {'request': {'url': '/api/test/', 'method': 'POST', 'json': {'key': 'value'}, 'headers': {'Accept-Language': 'zh-CN,zh;q=0.9', 'User-Agent': 'Mozilla/5.0 (Windows NT 6.0; WOW64; rv:24.0) Gecko/20100101 Chrome/56.0.2924.87 Safari/537.36', 'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'}}, 'name': 'wwqweq', 'variables': [{'username': 'yinqichang'}, {'password': '123456'}], 'parameters': [{'single': ['1', '2']}, {'username-password': [['1', '2'], ['1', '2']]}], 'setup_hooks': ['${setup_hook_add_kwargs($request)}'], 'teardown_hooks': ['${teardown_hook_sleep_N_secs($response, 1)}']}}
+2018-06-24 22:59:43,213 [django.request:118] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /api/test/
+Traceback (most recent call last):
+  File "D:\Program Files (x86)\Python3.6.4\lib\site-packages\django\core\handlers\exception.py", line 35, in inner
+    response = get_response(request)
+  File "D:\Program Files (x86)\Python3.6.4\lib\site-packages\django\core\handlers\base.py", line 139, in _get_response
+    "returned None instead." % (callback.__module__, view_name)
+ValueError: The view HttpRunnerManager.activator.process didn't return an HttpResponse object. It returned None instead.
+2018-06-24 22:59:43,792 [django.request:118] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /api/test/
+Traceback (most recent call last):
+  File "D:\Program Files (x86)\Python3.6.4\lib\site-packages\django\core\handlers\exception.py", line 35, in inner
+    response = get_response(request)
+  File "D:\Program Files (x86)\Python3.6.4\lib\site-packages\django\core\handlers\base.py", line 139, in _get_response
+    "returned None instead." % (callback.__module__, view_name)
+ValueError: The view HttpRunnerManager.activator.process didn't return an HttpResponse object. It returned None instead.
+2018-06-24 22:59:44,014 [django.request:118] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /api/test/
+Traceback (most recent call last):
+  File "D:\Program Files (x86)\Python3.6.4\lib\site-packages\django\core\handlers\exception.py", line 35, in inner
+    response = get_response(request)
+  File "D:\Program Files (x86)\Python3.6.4\lib\site-packages\django\core\handlers\base.py", line 139, in _get_response
+    "returned None instead." % (callback.__module__, view_name)
+ValueError: The view HttpRunnerManager.activator.process didn't return an HttpResponse object. It returned None instead.
+2018-06-24 22:59:44,207 [django.request:118] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /api/test/
+Traceback (most recent call last):
+  File "D:\Program Files (x86)\Python3.6.4\lib\site-packages\django\core\handlers\exception.py", line 35, in inner
+    response = get_response(request)
+  File "D:\Program Files (x86)\Python3.6.4\lib\site-packages\django\core\handlers\base.py", line 139, in _get_response
+    "returned None instead." % (callback.__module__, view_name)
+ValueError: The view HttpRunnerManager.activator.process didn't return an HttpResponse object. It returned None instead.
+2018-06-24 23:04:49,050 [HttpRunnerManager:160] [operation:add_case_data] [INFO]- wwqweq用例更新成功: {'test': {'request': {'url': '/api/test/', 'method': 'POST', 'json': {'id': '123456', 'name': 'caonidaye'}, 'headers': {'Accept-Language': 'zh-CN,zh;q=0.9', 'User-Agent': 'Mozilla/5.0 (Windows NT 6.0; WOW64; rv:24.0) Gecko/20100101 Chrome/56.0.2924.87 Safari/537.36', 'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'}}, 'name': 'wwqweq', 'variables': [{'username': 'yinqichang'}, {'password': '123456'}], 'parameters': [{'single': ['1', '2']}, {'username-password': [['1', '2'], ['1', '2']]}], 'setup_hooks': ['${setup_hook_add_kwargs($request)}'], 'teardown_hooks': ['${teardown_hook_sleep_N_secs($response, 1)}']}}
+2018-06-25 21:58:14,409 [HttpRunnerManager:45] [views:login] [INFO]- yinqichang 登录成功
+2018-06-25 22:29:51,841 [django.request:93] [base:get_response] [WARNING]- Not Found: /
+2018-06-25 22:29:57,141 [HttpRunnerManager:45] [views:login] [INFO]- yinqichang 登录成功
+2018-06-25 22:32:31,074 [HttpRunnerManager:160] [operation:add_case_data] [INFO]- wwqweq用例更新成功: {'test': {'request': {'url': '/api/test/', 'method': 'POST', 'data': {'id': '123456', 'name': 'yinqichang'}, 'headers': {'Accept-Language': 'zh-CN,zh;q=0.9', 'User-Agent': 'Mozilla/5.0 (Windows NT 6.0; WOW64; rv:24.0) Gecko/20100101 Chrome/56.0.2924.87 Safari/537.36', 'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'}}, 'name': 'wwqweq', 'variables': [{'username': 'yinqichang'}, {'password': '123456'}], 'parameters': [{'single': ['1', '2']}, {'username-password': [['1', '2'], ['1', '2']]}], 'setup_hooks': ['${setup_hook_add_kwargs($request)}'], 'teardown_hooks': ['${teardown_hook_sleep_N_secs($response, 1)}']}}
+2018-06-25 22:33:18,965 [django.request:118] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /api/test/
+Traceback (most recent call last):
+  File "D:\Program Files (x86)\Python3.6.4\lib\site-packages\django\core\handlers\exception.py", line 35, in inner
+    response = get_response(request)
+  File "D:\Program Files (x86)\Python3.6.4\lib\site-packages\django\core\handlers\base.py", line 128, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "D:\Program Files (x86)\Python3.6.4\lib\site-packages\django\core\handlers\base.py", line 126, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "E:\HttpRunnerManager\HttpRunnerManager\activator.py", line 15, in process
+    result = fun(request, index) if index else fun(request)
+  File "E:\HttpRunnerManager\ApiManager\views.py", line 509, in test
+    kwargs = json.loads(request.body.decode('utf-8'))
+  File "D:\Program Files (x86)\Python3.6.4\lib\json\__init__.py", line 354, in loads
+    return _default_decoder.decode(s)
+  File "D:\Program Files (x86)\Python3.6.4\lib\json\decoder.py", line 339, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "D:\Program Files (x86)\Python3.6.4\lib\json\decoder.py", line 357, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+2018-06-25 22:33:19,040 [django.request:118] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /api/test/
+Traceback (most recent call last):
+  File "D:\Program Files (x86)\Python3.6.4\lib\site-packages\django\core\handlers\exception.py", line 35, in inner
+    response = get_response(request)
+  File "D:\Program Files (x86)\Python3.6.4\lib\site-packages\django\core\handlers\base.py", line 128, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "D:\Program Files (x86)\Python3.6.4\lib\site-packages\django\core\handlers\base.py", line 126, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "E:\HttpRunnerManager\HttpRunnerManager\activator.py", line 15, in process
+    result = fun(request, index) if index else fun(request)
+  File "E:\HttpRunnerManager\ApiManager\views.py", line 509, in test
+    kwargs = json.loads(request.body.decode('utf-8'))
+  File "D:\Program Files (x86)\Python3.6.4\lib\json\__init__.py", line 354, in loads
+    return _default_decoder.decode(s)
+  File "D:\Program Files (x86)\Python3.6.4\lib\json\decoder.py", line 339, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "D:\Program Files (x86)\Python3.6.4\lib\json\decoder.py", line 357, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+2018-06-25 22:33:19,167 [django.request:118] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /api/test/
+Traceback (most recent call last):
+  File "D:\Program Files (x86)\Python3.6.4\lib\site-packages\django\core\handlers\exception.py", line 35, in inner
+    response = get_response(request)
+  File "D:\Program Files (x86)\Python3.6.4\lib\site-packages\django\core\handlers\base.py", line 128, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "D:\Program Files (x86)\Python3.6.4\lib\site-packages\django\core\handlers\base.py", line 126, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "E:\HttpRunnerManager\HttpRunnerManager\activator.py", line 15, in process
+    result = fun(request, index) if index else fun(request)
+  File "E:\HttpRunnerManager\ApiManager\views.py", line 509, in test
+    kwargs = json.loads(request.body.decode('utf-8'))
+  File "D:\Program Files (x86)\Python3.6.4\lib\json\__init__.py", line 354, in loads
+    return _default_decoder.decode(s)
+  File "D:\Program Files (x86)\Python3.6.4\lib\json\decoder.py", line 339, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "D:\Program Files (x86)\Python3.6.4\lib\json\decoder.py", line 357, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+2018-06-25 22:33:19,227 [django.request:118] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /api/test/
+Traceback (most recent call last):
+  File "D:\Program Files (x86)\Python3.6.4\lib\site-packages\django\core\handlers\exception.py", line 35, in inner
+    response = get_response(request)
+  File "D:\Program Files (x86)\Python3.6.4\lib\site-packages\django\core\handlers\base.py", line 128, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "D:\Program Files (x86)\Python3.6.4\lib\site-packages\django\core\handlers\base.py", line 126, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "E:\HttpRunnerManager\HttpRunnerManager\activator.py", line 15, in process
+    result = fun(request, index) if index else fun(request)
+  File "E:\HttpRunnerManager\ApiManager\views.py", line 509, in test
+    kwargs = json.loads(request.body.decode('utf-8'))
+  File "D:\Program Files (x86)\Python3.6.4\lib\json\__init__.py", line 354, in loads
+    return _default_decoder.decode(s)
+  File "D:\Program Files (x86)\Python3.6.4\lib\json\decoder.py", line 339, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "D:\Program Files (x86)\Python3.6.4\lib\json\decoder.py", line 357, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+2018-06-25 22:36:41,957 [HttpRunnerManager:45] [views:login] [INFO]- yinqichang 登录成功
+2018-06-25 22:59:13,001 [django.request:118] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /api/test/
+Traceback (most recent call last):
+  File "D:\Program Files (x86)\Python3.6.4\lib\site-packages\django\core\handlers\exception.py", line 35, in inner
+    response = get_response(request)
+  File "D:\Program Files (x86)\Python3.6.4\lib\site-packages\django\core\handlers\base.py", line 128, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "D:\Program Files (x86)\Python3.6.4\lib\site-packages\django\core\handlers\base.py", line 126, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "E:\HttpRunnerManager\HttpRunnerManager\activator.py", line 15, in process
+    result = fun(request, index) if index else fun(request)
+  File "E:\HttpRunnerManager\ApiManager\views.py", line 509, in test
+    kwargs = json.loads(request.body.decode('utf-8'))
+  File "D:\Program Files (x86)\Python3.6.4\lib\json\__init__.py", line 354, in loads
+    return _default_decoder.decode(s)
+  File "D:\Program Files (x86)\Python3.6.4\lib\json\decoder.py", line 339, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "D:\Program Files (x86)\Python3.6.4\lib\json\decoder.py", line 357, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+2018-06-25 22:59:13,099 [django.request:118] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /api/test/
+Traceback (most recent call last):
+  File "D:\Program Files (x86)\Python3.6.4\lib\site-packages\django\core\handlers\exception.py", line 35, in inner
+    response = get_response(request)
+  File "D:\Program Files (x86)\Python3.6.4\lib\site-packages\django\core\handlers\base.py", line 128, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "D:\Program Files (x86)\Python3.6.4\lib\site-packages\django\core\handlers\base.py", line 126, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "E:\HttpRunnerManager\HttpRunnerManager\activator.py", line 15, in process
+    result = fun(request, index) if index else fun(request)
+  File "E:\HttpRunnerManager\ApiManager\views.py", line 509, in test
+    kwargs = json.loads(request.body.decode('utf-8'))
+  File "D:\Program Files (x86)\Python3.6.4\lib\json\__init__.py", line 354, in loads
+    return _default_decoder.decode(s)
+  File "D:\Program Files (x86)\Python3.6.4\lib\json\decoder.py", line 339, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "D:\Program Files (x86)\Python3.6.4\lib\json\decoder.py", line 357, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+2018-06-25 22:59:13,205 [django.request:118] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /api/test/
+Traceback (most recent call last):
+  File "D:\Program Files (x86)\Python3.6.4\lib\site-packages\django\core\handlers\exception.py", line 35, in inner
+    response = get_response(request)
+  File "D:\Program Files (x86)\Python3.6.4\lib\site-packages\django\core\handlers\base.py", line 128, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "D:\Program Files (x86)\Python3.6.4\lib\site-packages\django\core\handlers\base.py", line 126, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "E:\HttpRunnerManager\HttpRunnerManager\activator.py", line 15, in process
+    result = fun(request, index) if index else fun(request)
+  File "E:\HttpRunnerManager\ApiManager\views.py", line 509, in test
+    kwargs = json.loads(request.body.decode('utf-8'))
+  File "D:\Program Files (x86)\Python3.6.4\lib\json\__init__.py", line 354, in loads
+    return _default_decoder.decode(s)
+  File "D:\Program Files (x86)\Python3.6.4\lib\json\decoder.py", line 339, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "D:\Program Files (x86)\Python3.6.4\lib\json\decoder.py", line 357, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+2018-06-25 22:59:13,330 [django.request:118] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /api/test/
+Traceback (most recent call last):
+  File "D:\Program Files (x86)\Python3.6.4\lib\site-packages\django\core\handlers\exception.py", line 35, in inner
+    response = get_response(request)
+  File "D:\Program Files (x86)\Python3.6.4\lib\site-packages\django\core\handlers\base.py", line 128, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "D:\Program Files (x86)\Python3.6.4\lib\site-packages\django\core\handlers\base.py", line 126, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "E:\HttpRunnerManager\HttpRunnerManager\activator.py", line 15, in process
+    result = fun(request, index) if index else fun(request)
+  File "E:\HttpRunnerManager\ApiManager\views.py", line 509, in test
+    kwargs = json.loads(request.body.decode('utf-8'))
+  File "D:\Program Files (x86)\Python3.6.4\lib\json\__init__.py", line 354, in loads
+    return _default_decoder.decode(s)
+  File "D:\Program Files (x86)\Python3.6.4\lib\json\decoder.py", line 339, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "D:\Program Files (x86)\Python3.6.4\lib\json\decoder.py", line 357, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+2018-06-25 22:59:52,713 [django.request:118] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /api/test/
+Traceback (most recent call last):
+  File "D:\Program Files (x86)\Python3.6.4\lib\site-packages\django\core\handlers\exception.py", line 35, in inner
+    response = get_response(request)
+  File "D:\Program Files (x86)\Python3.6.4\lib\site-packages\django\core\handlers\base.py", line 128, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "D:\Program Files (x86)\Python3.6.4\lib\site-packages\django\core\handlers\base.py", line 126, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "E:\HttpRunnerManager\HttpRunnerManager\activator.py", line 15, in process
+    result = fun(request, index) if index else fun(request)
+  File "E:\HttpRunnerManager\ApiManager\views.py", line 509, in test
+    kwargs = json.loads(request.body.decode('utf-8'))
+  File "D:\Program Files (x86)\Python3.6.4\lib\json\__init__.py", line 354, in loads
+    return _default_decoder.decode(s)
+  File "D:\Program Files (x86)\Python3.6.4\lib\json\decoder.py", line 339, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "D:\Program Files (x86)\Python3.6.4\lib\json\decoder.py", line 357, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+2018-06-25 22:59:53,145 [django.request:118] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /api/test/
+Traceback (most recent call last):
+  File "D:\Program Files (x86)\Python3.6.4\lib\site-packages\django\core\handlers\exception.py", line 35, in inner
+    response = get_response(request)
+  File "D:\Program Files (x86)\Python3.6.4\lib\site-packages\django\core\handlers\base.py", line 128, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "D:\Program Files (x86)\Python3.6.4\lib\site-packages\django\core\handlers\base.py", line 126, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "E:\HttpRunnerManager\HttpRunnerManager\activator.py", line 15, in process
+    result = fun(request, index) if index else fun(request)
+  File "E:\HttpRunnerManager\ApiManager\views.py", line 509, in test
+    kwargs = json.loads(request.body.decode('utf-8'))
+  File "D:\Program Files (x86)\Python3.6.4\lib\json\__init__.py", line 354, in loads
+    return _default_decoder.decode(s)
+  File "D:\Program Files (x86)\Python3.6.4\lib\json\decoder.py", line 339, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "D:\Program Files (x86)\Python3.6.4\lib\json\decoder.py", line 357, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+2018-06-25 22:59:53,241 [django.request:118] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /api/test/
+Traceback (most recent call last):
+  File "D:\Program Files (x86)\Python3.6.4\lib\site-packages\django\core\handlers\exception.py", line 35, in inner
+    response = get_response(request)
+  File "D:\Program Files (x86)\Python3.6.4\lib\site-packages\django\core\handlers\base.py", line 128, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "D:\Program Files (x86)\Python3.6.4\lib\site-packages\django\core\handlers\base.py", line 126, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "E:\HttpRunnerManager\HttpRunnerManager\activator.py", line 15, in process
+    result = fun(request, index) if index else fun(request)
+  File "E:\HttpRunnerManager\ApiManager\views.py", line 509, in test
+    kwargs = json.loads(request.body.decode('utf-8'))
+  File "D:\Program Files (x86)\Python3.6.4\lib\json\__init__.py", line 354, in loads
+    return _default_decoder.decode(s)
+  File "D:\Program Files (x86)\Python3.6.4\lib\json\decoder.py", line 339, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "D:\Program Files (x86)\Python3.6.4\lib\json\decoder.py", line 357, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+2018-06-25 22:59:53,375 [django.request:118] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /api/test/
+Traceback (most recent call last):
+  File "D:\Program Files (x86)\Python3.6.4\lib\site-packages\django\core\handlers\exception.py", line 35, in inner
+    response = get_response(request)
+  File "D:\Program Files (x86)\Python3.6.4\lib\site-packages\django\core\handlers\base.py", line 128, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "D:\Program Files (x86)\Python3.6.4\lib\site-packages\django\core\handlers\base.py", line 126, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "E:\HttpRunnerManager\HttpRunnerManager\activator.py", line 15, in process
+    result = fun(request, index) if index else fun(request)
+  File "E:\HttpRunnerManager\ApiManager\views.py", line 509, in test
+    kwargs = json.loads(request.body.decode('utf-8'))
+  File "D:\Program Files (x86)\Python3.6.4\lib\json\__init__.py", line 354, in loads
+    return _default_decoder.decode(s)
+  File "D:\Program Files (x86)\Python3.6.4\lib\json\decoder.py", line 339, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "D:\Program Files (x86)\Python3.6.4\lib\json\decoder.py", line 357, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+2018-06-25 23:10:07,356 [HttpRunnerManager:160] [operation:add_case_data] [INFO]- ndiaate用例更新成功: {'test': {'request': {'url': '/api/test/', 'method': 'POST', 'data': {'id': '123456', 'name': 'yinqichang'}, 'headers': {'Accept-Language': 'zh-CN,zh;q=0.9', 'User-Agent': 'Mozilla/5.0 (Windows NT 6.0; WOW64; rv:24.0) Gecko/20100101 Chrome/56.0.2924.87 Safari/537.36', 'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'}}, 'name': 'ndiaate', 'validate': [{'comparator': 'equals', 'check': '$code', 'expected': 'OK'}, {'comparator': 'equals', 'check': '$success', 'expected': 'OK'}], 'extract': [{'code': 'content.code'}, {'success': 'content.code.0.success'}], 'variables': [{'username': 'yinqichang'}, {'password': '123456'}], 'parameters': [{'single': ['1', '2']}, {'username-password': [['1', '2'], ['1', '2']]}], 'setup_hooks': ['${setup_hook_add_kwargs($request)}'], 'teardown_hooks': ['${teardown_hook_sleep_N_secs($response, 1)}']}}
+2018-06-25 23:11:31,051 [HttpRunnerManager:160] [operation:add_case_data] [INFO]- ndiaate用例更新成功: {'test': {'request': {'url': '/api/test/', 'method': 'POST', 'data': {'id': '123456', 'name': 'yinqichang'}, 'headers': {'Accept-Language': 'zh-CN,zh;q=0.9', 'User-Agent': 'Mozilla/5.0 (Windows NT 6.0; WOW64; rv:24.0) Gecko/20100101 Chrome/56.0.2924.87 Safari/537.36', 'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'}}, 'name': 'ndiaate', 'validate': [{'comparator': 'equals', 'check': '$code', 'expected': 'OK'}, {'comparator': 'equals', 'check': '$success', 'expected': 'OK'}], 'extract': [{'code': 'content.code'}, {'success': 'content.code.0.success'}], 'variables': [{'username': 'yinqichang'}, {'password': '123456'}], 'parameters': [{'single': ['1', '2']}, {'username-password': [['1', '2'], ['1', '2']]}], 'setup_hooks': ['${setup_hook_add_kwargs($request)}'], 'teardown_hooks': ['${teardown_hook_sleep_N_secs($response, 1)}']}}
+2018-06-25 23:11:53,695 [HttpRunnerManager:160] [operation:add_case_data] [INFO]- ndiaate用例更新成功: {'test': {'request': {'url': '/api/test/', 'method': 'POST', 'data': {'id': '123456', 'name': 'yinqichang'}, 'headers': {'Accept-Language': 'zh-CN,zh;q=0.9', 'User-Agent': 'Mozilla/5.0 (Windows NT 6.0; WOW64; rv:24.0) Gecko/20100101 Chrome/56.0.2924.87 Safari/537.36', 'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'}}, 'name': 'ndiaate', 'validate': [{'comparator': 'equals', 'check': '$code', 'expected': 'OK'}], 'extract': [{'code': 'content.code'}], 'variables': [{'username': 'yinqichang'}, {'password': '123456'}], 'parameters': [{'single': ['1', '2']}, {'username-password': [['1', '2'], ['1', '2']]}], 'setup_hooks': ['${setup_hook_add_kwargs($request)}'], 'teardown_hooks': ['${teardown_hook_sleep_N_secs($response, 1)}']}}
+2018-06-25 23:12:45,135 [HttpRunnerManager:160] [operation:add_case_data] [INFO]- ndiaate用例更新成功: {'test': {'request': {'url': '/api/test/', 'method': 'POST', 'data': {'id': '123456', 'name': 'yinqichang'}, 'headers': {'Accept-Language': 'zh-CN,zh;q=0.9', 'User-Agent': 'Mozilla/5.0 (Windows NT 6.0; WOW64; rv:24.0) Gecko/20100101 Chrome/56.0.2924.87 Safari/537.36', 'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'}}, 'name': 'ndiaate', 'validate': [{'comparator': 'equals', 'check': '$code', 'expected': 'OK'}, {'comparator': 'equals', 'check': '$success', 'expected': 'OK'}], 'extract': [{'code': 'content.code'}, {'success': 'content.success'}], 'variables': [{'username': 'yinqichang'}, {'password': '123456'}], 'parameters': [{'single': ['1', '2']}, {'username-password': [['1', '2'], ['1', '2']]}], 'setup_hooks': ['${setup_hook_add_kwargs($request)}'], 'teardown_hooks': ['${teardown_hook_sleep_N_secs($response, 1)}']}}
+2018-06-25 23:17:34,316 [HttpRunnerManager:160] [operation:add_case_data] [INFO]- ndiaate用例更新成功: {'test': {'request': {'url': '/api/test/', 'method': 'POST', 'data': {'id': '123456', 'name': 'yinqichang'}, 'headers': {'Accept-Language': 'zh-CN,zh;q=0.9', 'User-Agent': 'Mozilla/5.0 (Windows NT 6.0; WOW64; rv:24.0) Gecko/20100101 Chrome/56.0.2924.87 Safari/537.36', 'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'}}, 'name': 'ndiaate', 'validate': [{'comparator': 'equals', 'check': '$code', 'expected': 'OK'}, {'comparator': 'equals', 'check': '$success', 'expected': 'cao'}], 'extract': [{'code': 'content.code'}, {'$success': 'content.success.nidaye'}], 'variables': [{'username': 'yinqichang'}, {'password': '123456'}], 'parameters': [{'single': ['1', '2']}, {'username-password': [['1', '2'], ['1', '2']]}], 'setup_hooks': ['${setup_hook_add_kwargs($request)}'], 'teardown_hooks': ['${teardown_hook_sleep_N_secs($response, 1)}']}}
+2018-06-25 23:17:40,239 [django.request:118] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /api/test/
+Traceback (most recent call last):
+  File "D:\Program Files (x86)\Python3.6.4\lib\site-packages\django\core\handlers\exception.py", line 35, in inner
+    response = get_response(request)
+  File "D:\Program Files (x86)\Python3.6.4\lib\site-packages\django\core\handlers\base.py", line 128, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "D:\Program Files (x86)\Python3.6.4\lib\site-packages\django\core\handlers\base.py", line 126, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "E:\HttpRunnerManager\HttpRunnerManager\activator.py", line 15, in process
+    result = fun(request, index) if index else fun(request)
+  File "E:\HttpRunnerManager\ApiManager\views.py", line 521, in test
+    return JsonResponse({"code": "OK", "success": {"nidaye","cao"}})
+  File "D:\Program Files (x86)\Python3.6.4\lib\site-packages\django\http\response.py", line 509, in __init__
+    data = json.dumps(data, cls=encoder, **json_dumps_params)
+  File "D:\Program Files (x86)\Python3.6.4\lib\json\__init__.py", line 238, in dumps
+    **kw).encode(obj)
+  File "D:\Program Files (x86)\Python3.6.4\lib\json\encoder.py", line 199, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+  File "D:\Program Files (x86)\Python3.6.4\lib\json\encoder.py", line 257, in iterencode
+    return _iterencode(o, 0)
+  File "D:\Program Files (x86)\Python3.6.4\lib\site-packages\django\core\serializers\json.py", line 104, in default
+    return super().default(o)
+  File "D:\Program Files (x86)\Python3.6.4\lib\json\encoder.py", line 180, in default
+    o.__class__.__name__)
+TypeError: Object of type 'set' is not JSON serializable
+2018-06-25 23:17:40,654 [django.request:118] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /api/test/
+Traceback (most recent call last):
+  File "D:\Program Files (x86)\Python3.6.4\lib\site-packages\django\core\handlers\exception.py", line 35, in inner
+    response = get_response(request)
+  File "D:\Program Files (x86)\Python3.6.4\lib\site-packages\django\core\handlers\base.py", line 128, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "D:\Program Files (x86)\Python3.6.4\lib\site-packages\django\core\handlers\base.py", line 126, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "E:\HttpRunnerManager\HttpRunnerManager\activator.py", line 15, in process
+    result = fun(request, index) if index else fun(request)
+  File "E:\HttpRunnerManager\ApiManager\views.py", line 521, in test
+    return JsonResponse({"code": "OK", "success": {"nidaye","cao"}})
+  File "D:\Program Files (x86)\Python3.6.4\lib\site-packages\django\http\response.py", line 509, in __init__
+    data = json.dumps(data, cls=encoder, **json_dumps_params)
+  File "D:\Program Files (x86)\Python3.6.4\lib\json\__init__.py", line 238, in dumps
+    **kw).encode(obj)
+  File "D:\Program Files (x86)\Python3.6.4\lib\json\encoder.py", line 199, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+  File "D:\Program Files (x86)\Python3.6.4\lib\json\encoder.py", line 257, in iterencode
+    return _iterencode(o, 0)
+  File "D:\Program Files (x86)\Python3.6.4\lib\site-packages\django\core\serializers\json.py", line 104, in default
+    return super().default(o)
+  File "D:\Program Files (x86)\Python3.6.4\lib\json\encoder.py", line 180, in default
+    o.__class__.__name__)
+TypeError: Object of type 'set' is not JSON serializable
+2018-06-25 23:17:40,884 [django.request:118] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /api/test/
+Traceback (most recent call last):
+  File "D:\Program Files (x86)\Python3.6.4\lib\site-packages\django\core\handlers\exception.py", line 35, in inner
+    response = get_response(request)
+  File "D:\Program Files (x86)\Python3.6.4\lib\site-packages\django\core\handlers\base.py", line 128, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "D:\Program Files (x86)\Python3.6.4\lib\site-packages\django\core\handlers\base.py", line 126, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "E:\HttpRunnerManager\HttpRunnerManager\activator.py", line 15, in process
+    result = fun(request, index) if index else fun(request)
+  File "E:\HttpRunnerManager\ApiManager\views.py", line 521, in test
+    return JsonResponse({"code": "OK", "success": {"nidaye","cao"}})
+  File "D:\Program Files (x86)\Python3.6.4\lib\site-packages\django\http\response.py", line 509, in __init__
+    data = json.dumps(data, cls=encoder, **json_dumps_params)
+  File "D:\Program Files (x86)\Python3.6.4\lib\json\__init__.py", line 238, in dumps
+    **kw).encode(obj)
+  File "D:\Program Files (x86)\Python3.6.4\lib\json\encoder.py", line 199, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+  File "D:\Program Files (x86)\Python3.6.4\lib\json\encoder.py", line 257, in iterencode
+    return _iterencode(o, 0)
+  File "D:\Program Files (x86)\Python3.6.4\lib\site-packages\django\core\serializers\json.py", line 104, in default
+    return super().default(o)
+  File "D:\Program Files (x86)\Python3.6.4\lib\json\encoder.py", line 180, in default
+    o.__class__.__name__)
+TypeError: Object of type 'set' is not JSON serializable
+2018-06-25 23:17:41,145 [django.request:118] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /api/test/
+Traceback (most recent call last):
+  File "D:\Program Files (x86)\Python3.6.4\lib\site-packages\django\core\handlers\exception.py", line 35, in inner
+    response = get_response(request)
+  File "D:\Program Files (x86)\Python3.6.4\lib\site-packages\django\core\handlers\base.py", line 128, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "D:\Program Files (x86)\Python3.6.4\lib\site-packages\django\core\handlers\base.py", line 126, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "E:\HttpRunnerManager\HttpRunnerManager\activator.py", line 15, in process
+    result = fun(request, index) if index else fun(request)
+  File "E:\HttpRunnerManager\ApiManager\views.py", line 521, in test
+    return JsonResponse({"code": "OK", "success": {"nidaye","cao"}})
+  File "D:\Program Files (x86)\Python3.6.4\lib\site-packages\django\http\response.py", line 509, in __init__
+    data = json.dumps(data, cls=encoder, **json_dumps_params)
+  File "D:\Program Files (x86)\Python3.6.4\lib\json\__init__.py", line 238, in dumps
+    **kw).encode(obj)
+  File "D:\Program Files (x86)\Python3.6.4\lib\json\encoder.py", line 199, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+  File "D:\Program Files (x86)\Python3.6.4\lib\json\encoder.py", line 257, in iterencode
+    return _iterencode(o, 0)
+  File "D:\Program Files (x86)\Python3.6.4\lib\site-packages\django\core\serializers\json.py", line 104, in default
+    return super().default(o)
+  File "D:\Program Files (x86)\Python3.6.4\lib\json\encoder.py", line 180, in default
+    o.__class__.__name__)
+TypeError: Object of type 'set' is not JSON serializable
+2018-06-25 23:18:42,337 [HttpRunnerManager:160] [operation:add_case_data] [INFO]- ndiaate用例更新成功: {'test': {'request': {'url': '/api/test/', 'method': 'POST', 'data': {'id': '123456', 'name': 'yinqichang'}, 'headers': {'Accept-Language': 'zh-CN,zh;q=0.9', 'User-Agent': 'Mozilla/5.0 (Windows NT 6.0; WOW64; rv:24.0) Gecko/20100101 Chrome/56.0.2924.87 Safari/537.36', 'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'}}, 'name': 'ndiaate', 'validate': [{'comparator': 'equals', 'check': '$code', 'expected': 'OK'}, {'comparator': 'equals', 'check': '$success', 'expected': 'cao'}], 'extract': [{'code': 'content.code'}, {'$success': 'content.success.nidaye'}], 'variables': [{'username': 'yinqichang'}, {'password': '123456'}], 'parameters': [{'single': ['1', '2']}, {'username-password': [['1', '2'], ['1', '2']]}], 'setup_hooks': ['${setup_hook_add_kwargs($request)}'], 'teardown_hooks': ['${teardown_hook_sleep_N_secs($response, 1)}']}}
+2018-06-25 23:20:49,050 [HttpRunnerManager:160] [operation:add_case_data] [INFO]- ndiaate用例更新成功: {'test': {'request': {'url': '/api/test/', 'method': 'POST', 'data': {'id': '123456', 'name': 'yinqichang'}, 'headers': {'Accept-Language': 'zh-CN,zh;q=0.9', 'User-Agent': 'Mozilla/5.0 (Windows NT 6.0; WOW64; rv:24.0) Gecko/20100101 Chrome/56.0.2924.87 Safari/537.36', 'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'}}, 'name': 'ndiaate', 'validate': [{'comparator': 'equals', 'check': '$code', 'expected': 'OK'}, {'comparator': 'equals', 'check': '$success', 'expected': 'cao'}], 'extract': [{'code': 'content.code'}, {'success': 'content.success.nidaye'}], 'variables': [{'username': 'yinqichang'}, {'password': '123456'}], 'parameters': [{'single': ['1', '2']}, {'username-password': [['1', '2'], ['1', '2']]}], 'setup_hooks': ['${setup_hook_add_kwargs($request)}'], 'teardown_hooks': ['${teardown_hook_sleep_N_secs($response, 1)}']}}
+2018-06-25 23:21:47,993 [HttpRunnerManager:160] [operation:add_case_data] [INFO]- ndiaate用例更新成功: {'test': {'request': {'url': '/api/test/', 'method': 'POST', 'data': {'id': '123456', 'name': 'yinqichang'}, 'headers': {'Accept-Language': 'zh-CN,zh;q=0.9', 'User-Agent': 'Mozilla/5.0 (Windows NT 6.0; WOW64; rv:24.0) Gecko/20100101 Chrome/56.0.2924.87 Safari/537.36', 'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'}}, 'name': 'ndiaate', 'validate': [{'comparator': 'equals', 'check': '$code', 'expected': 'OK'}, {'comparator': 'equals', 'check': '$success', 'expected': 'cao'}, {'comparator': 'equals', 'check': '$nimbai', 'expected': 'nice'}], 'extract': [{'code': 'content.code'}, {'success': 'content.success.nidaye'}, {'nimbai': 'content.success.rinima'}], 'variables': [{'username': 'yinqichang'}, {'password': '123456'}], 'parameters': [{'single': ['1', '2']}, {'username-password': [['1', '2'], ['1', '2']]}], 'setup_hooks': ['${setup_hook_add_kwargs($request)}'], 'teardown_hooks': ['${teardown_hook_sleep_N_secs($response, 1)}']}}
+2018-06-25 23:22:23,585 [HttpRunnerManager:121] [operation:add_module_data] [INFO]- 模块更新成功：{'module_name': '苍老师', 'test_user': '尹其畅', 'simple_desc': '尹其畅', 'other_desc': '尹其畅'}
+2018-06-26 10:06:33,013 [HttpRunnerManager:45] [views:login] [INFO]- yinqichang 登录成功
+2018-06-26 10:07:29,783 [HttpRunnerManager:121] [operation:add_module_data] [INFO]- 模块更新成功：{'module_name': 'module 1', 'test_user': '尹其畅', 'simple_desc': '尹其畅', 'other_desc': '尹其畅'}
+2018-06-26 10:07:55,635 [HttpRunnerManager:160] [operation:add_case_data] [INFO]- test case 1用例更新成功: {'test': {'request': {'url': '/api/test/', 'method': 'POST', 'data': {'id': '123456', 'name': 'yinqichang'}, 'headers': {'Accept-Language': 'zh-CN,zh;q=0.9', 'User-Agent': 'Mozilla/5.0 (Windows NT 6.0; WOW64; rv:24.0) Gecko/20100101 Chrome/56.0.2924.87 Safari/537.36', 'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'}}, 'name': 'test case 1', 'validate': [{'comparator': 'equals', 'check': '$code', 'expected': 'OK'}, {'comparator': 'equals', 'check': '$success', 'expected': 'cao'}, {'comparator': 'equals', 'check': '$nimbai', 'expected': 'nice'}], 'extract': [{'code': 'content.code'}, {'success': 'content.success.nidaye'}, {'nimbai': 'content.success.rinima'}], 'variables': [{'username': 'yinqichang'}, {'password': '123456'}], 'parameters': [{'single': ['1', '2']}, {'username-password': [['1', '2'], ['1', '2']]}], 'setup_hooks': ['${setup_hook_add_kwargs($request)}'], 'teardown_hooks': ['${teardown_hook_sleep_N_secs($response, 1)}']}}
+2018-06-29 08:08:28,554 [HttpRunnerManager:45] [views:login] [INFO]- yinqichang 登录成功
+2018-06-29 13:37:15,845 [HttpRunnerManager:45] [views:login] [INFO]- yinqichang 登录成功
+2018-06-29 13:37:58,102 [HttpRunnerManager:160] [operation:add_case_data] [INFO]- test case 1用例更新成功: {'test': {'request': {'url': '/api/test/', 'method': 'POST', 'data': {'id': '123456', 'name': 'yinqichang'}, 'headers': {'Accept-Language': 'zh-CN,zh;q=0.9', 'User-Agent': 'Mozilla/5.0 (Windows NT 6.0; WOW64; rv:24.0) Gecko/20100101 Chrome/56.0.2924.87 Safari/537.36', 'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'}}, 'name': 'test case 1', 'validate': [{'comparator': 'equals', 'check': '$code', 'expected': 'OK'}, {'comparator': 'equals', 'check': '$key1', 'expected': 'value1'}, {'comparator': 'equals', 'check': '$key2', 'expected': 'value1'}], 'extract': [{'code': 'content.code'}, {'key1': 'content.success.key1'}, {'key2': 'content.success.key2'}], 'variables': [{'username': 'yinqichang'}, {'password': '123456'}], 'parameters': [{'single': ['1', '2']}, {'username-password': [['1', '2'], ['1', '2']]}], 'setup_hooks': ['${setup_hook_add_kwargs($request)}'], 'teardown_hooks': ['${teardown_hook_sleep_N_secs($response, 1)}']}}
+2018-06-29 13:39:00,103 [HttpRunnerManager:160] [operation:add_case_data] [INFO]- test case 1用例更新成功: {'test': {'request': {'url': '/api/test/', 'method': 'POST', 'data': {'id': '123456', 'name': 'yinqichang'}, 'headers': {'Accept-Language': 'zh-CN,zh;q=0.9', 'User-Agent': 'Mozilla/5.0 (Windows NT 6.0; WOW64; rv:24.0) Gecko/20100101 Chrome/56.0.2924.87 Safari/537.36', 'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'}}, 'name': 'test case 1', 'validate': [{'comparator': 'equals', 'check': '$code', 'expected': 'OK'}, {'comparator': 'equals', 'check': '$key1', 'expected': 'value1'}, {'comparator': 'equals', 'check': '$key2', 'expected': 'value1'}], 'extract': [{'code': 'content.code'}, {'key1': 'content.success.key1'}, {'key2': 'content.success.key2'}], 'variables': [{'username': 'yinqichang'}, {'password': '123456'}], 'parameters': [{'single': ['1', '2']}, {'username-password': [['1', '2'], ['1', '2']]}], 'setup_hooks': ['${setup_hook_add_kwargs($request)}'], 'teardown_hooks': ['${teardown_hook_sleep_N_secs($response, 1)}']}}
+2018-06-29 13:39:23,135 [HttpRunnerManager:160] [operation:add_case_data] [INFO]- testcase1用例更新成功: {'test': {'request': {'url': '/api/test/', 'method': 'POST', 'data': {'id': '123456', 'name': 'yinqichang'}, 'headers': {'Accept-Language': 'zh-CN,zh;q=0.9', 'User-Agent': 'Mozilla/5.0 (Windows NT 6.0; WOW64; rv:24.0) Gecko/20100101 Chrome/56.0.2924.87 Safari/537.36', 'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'}}, 'name': 'testcase1', 'variables': [{'username': 'yinqichang'}, {'password': '123456'}], 'parameters': [{'single': ['1', '2']}, {'username-password': [['1', '2'], ['1', '2']]}], 'setup_hooks': ['${setup_hook_add_kwargs($request)}'], 'teardown_hooks': ['${teardown_hook_sleep_N_secs($response, 1)}']}}
+2018-06-29 14:36:02,918 [HttpRunnerManager:58] [operation:add_project_data] [INFO]- 项目添加成功：{'project_name': 'HWS', 'responsible_name': '金三胖', 'test_user': '金三胖', 'dev_user': '金三胖', 'publish_app': '金三胖', 'simple_desc': '金三胖，你真胖', 'other_desc': '金三胖，你真胖'}
+2018-06-29 14:40:00,189 [HttpRunnerManager:106] [operation:add_module_data] [INFO]- 模块添加成功：{'module_name': '外卖', 'test_user': '金三胖', 'simple_desc': '金三胖，你真胖', 'other_desc': '金三胖，你真胖', 'belong_project': <ProjectInfo: ProjectInfo object (8)>}
+2018-06-29 14:40:26,212 [HttpRunnerManager:160] [operation:add_case_data] [INFO]- testcase4用例更新成功: {'test': {'request': {'url': '/api/test/', 'method': 'POST', 'data': {'id': '123456', 'name': 'yinqichang'}, 'headers': {'Accept-Language': 'zh-CN,zh;q=0.9', 'User-Agent': 'Mozilla/5.0 (Windows NT 6.0; WOW64; rv:24.0) Gecko/20100101 Chrome/56.0.2924.87 Safari/537.36', 'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'}}, 'name': 'testcase4', 'variables': [{'username': 'yinqichang'}, {'password': '123456'}], 'parameters': [{'single': ['1', '2']}, {'username-password': [['1', '2'], ['1', '2']]}], 'setup_hooks': ['${setup_hook_add_kwargs($request)}'], 'teardown_hooks': ['${teardown_hook_sleep_N_secs($response, 1)}']}}
+2018-06-29 14:40:38,354 [HttpRunnerManager:160] [operation:add_case_data] [INFO]- testcase3用例更新成功: {'test': {'request': {'url': '/api/test/', 'method': 'POST', 'data': {'id': '123456', 'name': 'yinqichang'}, 'headers': {'Accept-Language': 'zh-CN,zh;q=0.9', 'User-Agent': 'Mozilla/5.0 (Windows NT 6.0; WOW64; rv:24.0) Gecko/20100101 Chrome/56.0.2924.87 Safari/537.36', 'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'}}, 'name': 'testcase3', 'variables': [{'username': 'yinqichang'}, {'password': '123456'}], 'parameters': [{'single': ['1', '2']}, {'username-password': [['1', '2'], ['1', '2']]}], 'setup_hooks': ['${setup_hook_add_kwargs($request)}'], 'teardown_hooks': ['${teardown_hook_sleep_N_secs($response, 1)}']}}
+2018-06-29 14:41:12,527 [HttpRunnerManager:58] [operation:add_project_data] [INFO]- 项目添加成功：{'project_name': '辽宁舰', 'responsible_name': '普京', 'test_user': '普京', 'dev_user': '普京', 'publish_app': '普京', 'simple_desc': '普京', 'other_desc': '普京'}
+2018-06-29 14:42:15,745 [HttpRunnerManager:106] [operation:add_module_data] [INFO]- 模块添加成功：{'module_name': '鱼雷', 'test_user': '普京', 'simple_desc': '普京', 'other_desc': '普京', 'belong_project': <ProjectInfo: ProjectInfo object (9)>}
+2018-06-29 14:42:32,179 [HttpRunnerManager:160] [operation:add_case_data] [INFO]- testcase2用例更新成功: {'test': {'request': {'url': '/api/test/', 'method': 'POST', 'data': {'id': '123456', 'name': 'yinqichang'}, 'headers': {'Accept-Language': 'zh-CN,zh;q=0.9', 'User-Agent': 'Mozilla/5.0 (Windows NT 6.0; WOW64; rv:24.0) Gecko/20100101 Chrome/56.0.2924.87 Safari/537.36', 'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'}}, 'name': 'testcase2', 'variables': [{'username': 'yinqichang'}, {'password': '123456'}], 'parameters': [{'single': ['1', '2']}, {'username-password': [['1', '2'], ['1', '2']]}], 'setup_hooks': ['${setup_hook_add_kwargs($request)}'], 'teardown_hooks': ['${teardown_hook_sleep_N_secs($response, 1)}']}}
+2018-06-29 16:23:43,312 [HttpRunnerManager:121] [operation:add_module_data] [INFO]- 模块更新成功：{'module_name': '鱼雷', 'test_user': 'C罗', 'simple_desc': 'C罗', 'other_desc': 'C罗'}
+2018-06-29 16:23:49,012 [HttpRunnerManager:121] [operation:add_module_data] [INFO]- 模块更新成功：{'module_name': '足球', 'test_user': 'C罗', 'simple_desc': 'C罗', 'other_desc': 'C罗'}

@@ -1,0 +1,38 @@
+-   config:
+        name: base_url config
+        request:
+            base_url: http://127.0.0.1:8000
+-   test:
+        extract:
+        -   code: content.code
+        -   success: content.code.0.success
+        name: test case demo 01
+        parameters:
+        -   single:
+            - '1'
+            - '2'
+        -   username-password:
+            -   - '1'
+                - '2'
+            -   - '1'
+                - '2'
+        request:
+            data:
+                password: $password
+                username: $username
+            method: POST
+            url: /api/test/
+        setup_hooks:
+        - ${setup_hook_add_kwargs($request)}
+        teardown_hooks:
+        - ${teardown_hook_sleep_N_secs($response, 1)}
+        validate:
+        -   check: $code
+            comparator: equals
+            expected: ok
+        -   check: $success
+            comparator: equals
+            expected: ok
+        variables:
+        -   username: yinqichang
+        -   password: '123456'
